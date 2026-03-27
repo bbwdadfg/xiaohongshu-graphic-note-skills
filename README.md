@@ -41,6 +41,40 @@
 - `insight`: 核心拆解知识图
 - `scenario`: 应用步骤知识图
 
+## 真实案例
+
+下面这组图文是这条链路的一个真实输出案例，输入来源是 `gstack` 这个 GitHub 项目，目标是把一个技术项目整理成适合小红书分发的图文笔记。
+
+案例标题：
+
+`一个人怎么做出 20 人工程团队的效率？我刚挖到这个 GitHub 项目`
+
+正文节选：
+
+> 今天刷 GitHub 时，我认真看了 Garry Tan 开源的 gstack，第一感觉不是“又一个 AI 编程工具”，而是“终于有人把 AI 协作开发的流程做成产品了”。
+>
+> 它最强的点，不是帮你多写几行代码，而是把一个真实团队里的关键角色拆出来：CEO 负责重新想产品，工程经理负责锁架构，设计师负责看视觉和交互，review 负责查生产风险，QA 负责走真实页面，发布工具负责把最后一公里跑完。
+>
+> gstack 的价值不在单点提速，而是把 Think、Plan、Build、Review、Test、Ship、Reflect 串成一条连续流程，让 AI 真正进入软件开发主流程。
+
+适合展示这条链路能处理什么内容：
+
+- 可以把技术项目转成平台化表达，而不是只做资讯摘要
+- 可以同时产出笔记文案和 3 张结构不同的知识图解
+- 输出更像“可直接发布的成品”，不是一堆半成品中间稿
+
+案例话题词：
+
+`#GitHub发现 #AI编程 #ClaudeCode #独立开发 #程序员工具 #开发效率`
+
+案例配图：
+
+![gstack cover](examples/gstack/cover.png)
+
+![gstack insight](examples/gstack/insight.png)
+
+![gstack scenario](examples/gstack/scenario.png)
+
 ## 快速开始
 
 安装依赖：
@@ -165,22 +199,6 @@ python3 -m unittest discover -s tests
 - 输出目录 `output/`
 - 本机无关的系统文件
 - 任何真实 token、密钥、私有 Base/Table 标识
-
-而不是把所有问题混在一起。
-
-## 测试
-
-跑全量测试：
-
-```bash
-python3 -m unittest discover -s tests
-```
-
-只跑图片模块测试：
-
-```bash
-python3 -m unittest tests.test_xiaohongshu_note_illustrator
-```
 
 ## 当前链路定位
 
