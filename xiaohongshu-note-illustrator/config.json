@@ -1,0 +1,9 @@
+{
+  "api": "replicate",
+  "render_engine": "replicate",
+  "replicate_api_token": "your_replicate_api_token",
+  "model": "google/nano-banana-pro",
+  "default_output_format": "png",
+  "default_resolution": "2K",
+  "prompt_suffix": "知识图解排版、复杂手绘信息结构、所有中文文字由模型直接生成、不要后期叠字、不要摄影感、不要海报感、不要英文电脑字体、不要水印、不要拼贴错字"
+}

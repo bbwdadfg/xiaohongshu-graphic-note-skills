@@ -1,0 +1,7 @@
+interface:
+  display_name: "小红书飞书入表器"
+  short_description: "把一条小红书图文笔记写入专用飞书多维表格。"
+  default_prompt: "Use $xiaohongshu-bitable-publisher to append one generated Xiaohongshu note into the dedicated Feishu Bitable table."
+
+policy:
+  allow_implicit_invocation: true

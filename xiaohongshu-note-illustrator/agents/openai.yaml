@@ -1,0 +1,7 @@
+interface:
+  display_name: "小红书配图生成器"
+  short_description: "只用 nano-banana 生成带中文内容的小红书知识卡片。"
+  default_prompt: "Use $xiaohongshu-note-illustrator to turn a note JSON image plan into three final Xiaohongshu knowledge-card images using Replicate google/nano-banana-pro only, with the Chinese text generated directly by the model."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "小红书图文总控"
+  short_description: "一键把单条资讯跑成小红书图文笔记和三张知识卡片。"
+  default_prompt: "Use $xiaohongshu-graphic-note-pipeline to turn one link or pasted news item into a complete Xiaohongshu graphic note with three final generated knowledge-card images."
+
+policy:
+  allow_implicit_invocation: true

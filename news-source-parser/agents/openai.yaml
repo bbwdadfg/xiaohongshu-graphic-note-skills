@@ -1,0 +1,7 @@
+interface:
+  display_name: "资讯源解析器"
+  short_description: "把单条资讯整理成小红书下游可用的结构化 JSON。"
+  default_prompt: "Use $news-source-parser to normalize one URL or pasted text into a structured source object for Xiaohongshu note generation."
+
+policy:
+  allow_implicit_invocation: true

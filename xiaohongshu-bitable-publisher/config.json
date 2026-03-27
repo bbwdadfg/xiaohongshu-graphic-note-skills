@@ -1,0 +1,33 @@
+{
+  "app_id": "your_feishu_app_id",
+  "app_secret": "your_feishu_app_secret",
+  "app_token": "your_feishu_bitable_app_token",
+  "table_id": "your_feishu_bitable_table_id",
+  "field_order": [
+    "标题",
+    "日期",
+    "开场钩子",
+    "正文",
+    "总结",
+    "推荐标签",
+    "封面标题",
+    "封面图",
+    "观点图",
+    "场景图",
+    "来源平台",
+    "来源链接",
+    "原始摘要",
+    "生成状态"
+  ],
+  "field_types": {
+    "日期": 5,
+    "封面图": 17,
+    "观点图": 17,
+    "场景图": 17
+  },
+  "cleanup_fields": [
+    "文本",
+    "多行文本",
+    "附件"
+  ]
+}

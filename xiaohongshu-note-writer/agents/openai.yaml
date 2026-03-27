@@ -1,0 +1,7 @@
+interface:
+  display_name: "小红书笔记文案生成器"
+  short_description: "用 Gemini 3 生成高质量小红书图文笔记和三张图的规划。"
+  default_prompt: "Use $xiaohongshu-note-writer to turn one structured source JSON into a polished Xiaohongshu note with a three-image plan."
+
+policy:
+  allow_implicit_invocation: true
