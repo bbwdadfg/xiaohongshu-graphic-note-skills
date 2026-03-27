@@ -1,13 +1,36 @@
 # 小红书图文生成 Skills
 
-一套固定流程的内容生产链路，用来把一条资讯源转成：
+## 中文介绍
+
+这是一个把“小红书图文生产工作流”拆成多个独立 skills 的项目。它的目标不是做一个什么都能生成的内容平台，而是把一条资讯源稳定地转成：
 
 1. 结构化来源 JSON
 2. 一篇小红书图文笔记
 3. 3 张知识图解配图
 4. 可选的飞书多维表格入库结果
 
-这不是通用内容平台，而是一套故意收窄范围的 Skills 原型。
+这个仓库更像一套高约束、强流程的技能编排原型。重点不是“单次生成多惊艳”，而是“整条链路可重复、可调试、可续跑”。
+
+## English Overview
+
+This repository turns a Xiaohongshu content workflow into a set of focused skills instead of one large all-in-one script.
+
+Its goal is not to be a generic content platform. The goal is to reliably transform one source item into:
+
+1. a normalized source JSON
+2. a Xiaohongshu-ready post draft
+3. three infographic-style images
+4. an optional Feishu Bitable record
+
+This is a high-constraint workflow prototype built for repeatability, controllability, and easier debugging.
+
+## 设计思路 / Design Rationale
+
+- 把工作流拆成多个 skills，而不是堆进一个超长 prompt 或一个超大脚本。这样每一步职责更窄，输出更稳定，失败也更容易定位。
+- 用 `parser -> writer -> illustrator -> publisher -> pipeline` 这样的明确分层，把“解析、写作、出图、发布”拆开，避免一个阶段的问题污染整个链路。
+- 中间产物统一落成结构化 JSON，这样可以单独重跑某一步，而不是每次从头全链路重来。
+- Python 在这里故意保持“薄包装层”角色，主要负责参数处理、结构校验、HTTP 调用和结果落盘，不把过多隐式逻辑塞进代码里。这样更容易控制输出、复现问题和做脱敏发布。
+- 通过高约束设计换取稳定性。图片固定 3 张，角色固定，模型固定，流程固定。这会减少自由度，但会明显提高可预测性和可维护性。
 
 ## 包含哪些模块
 
